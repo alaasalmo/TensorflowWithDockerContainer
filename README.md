@@ -8,7 +8,9 @@
 
 ## Project goal
 The main idea of this project is to show how to use docker containers to distribute the trainging process for the deep learning on different containers. These containers could be run on the same machine or different machines. In our project, we are going to implement the project on the same machine. After that we will use these dockers with Kubernetes in the second Article. Also the main goal is to use the capabilities of Tensorflow with distributed system.
+
 <IMG src="images/capstone-project-1.jpg">
+
 In this diagram we will create three containers. 
 <b>The first container</b> is cheif docker. The role for this ocntainer:
 - Manage the other workers
@@ -25,11 +27,14 @@ We are going small sample data. called <a href="finance_news.csv">finance_news.c
 This dataset is a simple financial news sentiment dataset that can be used to train a GRU model for text classification.
 
 Columns:
+
 text → a short financial news headline
+
 label → the sentiment/class of the news
 
 Example:
 1 = positive financial news
+
 0 = negative financial news
 
 ## Build container image
